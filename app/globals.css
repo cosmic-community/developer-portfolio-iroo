@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-neutral-900 antialiased;
+  }
+
+  ::selection {
+    @apply bg-neutral-900 text-white;
+  }
+}
+
+@layer components {
+  .prose h2 {
+    @apply text-xl font-semibold mt-8 mb-3 text-neutral-900;
+  }
+
+  .prose h3 {
+    @apply text-lg font-semibold mt-6 mb-2 text-neutral-900;
+  }
+
+  .prose p {
+    @apply mb-4 leading-relaxed text-neutral-600;
+  }
+
+  .prose ul {
+    @apply list-disc pl-6 mb-4 text-neutral-600;
+  }
+
+  .prose ol {
+    @apply list-decimal pl-6 mb-4 text-neutral-600;
+  }
+
+  .prose li {
+    @apply mb-1;
+  }
+
+  .prose a {
+    @apply text-neutral-900 underline underline-offset-2 hover:text-neutral-500 transition-colors;
+  }
+
+  .prose img {
+    @apply rounded-lg my-6 w-full;
+  }
+
+  .prose blockquote {
+    @apply border-l-2 border-neutral-200 pl-4 italic text-neutral-500 my-4;
+  }
+
+  .prose code {
+    @apply bg-neutral-100 px-1.5 py-0.5 rounded text-sm;
+  }
+
+  .prose pre {
+    @apply bg-neutral-100 p-4 rounded-lg overflow-x-auto my-4;
+  }
+
+  .prose pre code {
+    @apply bg-transparent p-0;
+  }
+}
