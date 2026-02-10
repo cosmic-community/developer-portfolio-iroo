@@ -8,7 +8,7 @@ export interface CosmicObject {
   slug: string
   title: string
   content?: string
-  metadata: Record<string, unknown>
+  metadata: Record<string, unknown> | null // Changed: Allow null since Cosmic returns null for objects without metafields
   type: string
   created_at?: string
   modified_at?: string
